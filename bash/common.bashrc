@@ -7,6 +7,14 @@ alias ip='ip --color=auto'
 alias l='ls -lh'
 alias ll='ls -lha'
 
+cdgr() {
+    local root
+    if root=$(git rev-parse --show-toplevel); then
+        local root_unix=$(cygpath -u "$root")
+        cd "$root_unix"
+    fi
+}
+
 alias gc='git commit -m'
 alias gca='git commit -am'
 alias gcane='git commit --amend --no-edit'
