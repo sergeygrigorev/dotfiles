@@ -26,5 +26,8 @@ alias gpl='git pull'
 alias gl='git log'
 alias glo='git log --oneline'
 alias glp="git log '--pretty=tformat:%C(yellow)%h %Cblue%an %ah %Cgreen%cn %ch %Cred%d%n%s'"
+alias ga='git add '
+alias gal='git add --all'
 
 alias df-install="$DOTFILES_DIR/install.sh && source ~/.bashrc && source ~/user.bashrc"
+alias df-resource='source ~/.bashrc && source ~/user.bashrc'
